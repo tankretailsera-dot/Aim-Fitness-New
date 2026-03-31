@@ -374,7 +374,7 @@ function HomePage({ navigate }) {
 
       {/* SERVICES PREVIEW */}
       <section id="services-section" ref={r("services")} style={{ background: "#0d0d0d", padding: "100px 40px", borderTop: "1px solid #1a1a1a", borderBottom: "1px solid #1a1a1a" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 60, flexWrap: "wrap", gap: 24 }}>
             <div>
               <div className="tag">Services</div>
@@ -407,7 +407,7 @@ function HomePage({ navigate }) {
 
       {/* WHY US */}
       <section id="why-us" ref={r("why")} style={{ padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div className="tag" style={{ justifyContent: "center" }}>Why Choose Us</div>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(36px,5vw,64px)", lineHeight: 0.95, letterSpacing: "-0.02em", textTransform: "uppercase" }}>
@@ -435,7 +435,7 @@ function HomePage({ navigate }) {
 
       {/* CONTACT */}
       <section id="contact" ref={r("contact")} style={{ padding: "100px 40px", background: "#080808" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
           <div>
             <div className="tag">Contact</div>
             <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(36px,5vw,60px)", lineHeight: 0.95, letterSpacing: "-0.02em", textTransform: "uppercase", marginBottom: 32 }}>
@@ -504,7 +504,7 @@ function ServicesPage({ navigate }) {
       {/* Hero */}
       <section className="svc-hero-bg" style={{ padding: "140px 40px 80px", borderBottom: "1px solid #1a1a1a", position: "relative", overflow: "hidden" }}>
         <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(80px,16vw,200px)", lineHeight: 0.85, color: "transparent", WebkitTextStroke: "1px rgba(232,255,0,0.08)", userSelect: "none", position: "absolute", right: -20, top: "50%", transform: "translateY(-50%)" }}>SVC</div>
-        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <Breadcrumb crumbs={[{ key: "home", label: "Home" }, { label: "Services" }]} navigate={navigate} />
           <div className="tag fade-in">Our Offerings</div>
           <h1 className="fade-in" style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(52px,9vw,100px)", lineHeight: 0.9, letterSpacing: "-0.02em", textTransform: "uppercase", marginBottom: 24 }}>
@@ -519,7 +519,7 @@ function ServicesPage({ navigate }) {
       <Marquee />
 
       {/* Cards */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "80px 40px" }}>
+      <section style={{ maxWidth: 100%, margin: "0 auto", padding: "80px 40px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
           {SERVICES.map((s, i) => (
             <div key={s.id} className="svc-detail-card fade-in" style={{ animationDelay: `${i * 0.08}s` }}
@@ -545,7 +545,7 @@ function ServicesPage({ navigate }) {
 
       {/* Comparison table */}
       <section style={{ background: "#0d0d0d", padding: "80px 40px", borderTop: "1px solid #1a1a1a" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto" }}>
           <div className="tag">Quick Comparison</div>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(30px,4vw,52px)", lineHeight: 0.95, letterSpacing: "-0.02em", textTransform: "uppercase", marginBottom: 40 }}>
             FIND YOUR <span style={{ color: "#e8ff00" }}>BEST FIT</span>
@@ -603,7 +603,7 @@ function ServiceDetailPage({ serviceId, navigate }) {
       {/* Hero */}
       <section className="svc-hero-bg" style={{ padding: "140px 40px 80px", borderBottom: "1px solid #1a1a1a", position: "relative", overflow: "hidden" }}>
         <div style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(80px,14vw,180px)", lineHeight: 0.85, color: "transparent", WebkitTextStroke: "1px rgba(232,255,0,0.07)", userSelect: "none", position: "absolute", right: -20, top: "50%", transform: "translateY(-50%)" }}>{svc.num}</div>
-        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <Breadcrumb crumbs={[{ key: "home", label: "Home" }, { key: "services", label: "Services" }, { label: svc.title }]} navigate={navigate} />
           <span style={{ fontSize: 64, display: "block", marginBottom: 20 }} className="fade-in">{svc.icon}</span>
           <div className="tag fade-in">{svc.num} · AIM FITNESS</div>
@@ -621,7 +621,7 @@ function ServiceDetailPage({ serviceId, navigate }) {
       </section>
 
       {/* Body */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "80px 40px" }}>
+      <section style={{ maxWidth: 100%, margin: "0 auto", padding: "80px 40px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: 64 }}>
 
           {/* Left */}
@@ -680,7 +680,7 @@ function ServiceDetailPage({ serviceId, navigate }) {
 
       {/* Related */}
       <section style={{ background: "#0d0d0d", padding: "80px 40px", borderTop: "1px solid #1a1a1a" }}>
-        <div style={{ maxWidth: "100%", margin: "0 auto", padding: "0 20px" }}>
+        <div style={{ maxWidth: "1400", margin: "0 auto", padding: "0 20px" }}>
           <div className="tag">Explore More</div>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 0.95, textTransform: "uppercase", marginBottom: 36 }}>
             OTHER <span style={{ color: "#e8ff00" }}>SERVICES</span>
