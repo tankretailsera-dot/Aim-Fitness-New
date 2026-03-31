@@ -294,9 +294,23 @@ function HomePage({ navigate }) {
 
         <div style={{ position: "relative", zIndex: 1, maxWidth: 860 }} className="fade-in">
           <div className="tag">Thane West · Lokmanya Nagar</div>
-          <h1 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontSize: "clamp(52px,10vw,120px)", fontWeight: 900, lineHeight: 0.9, letterSpacing: "-0.02em", textTransform: "uppercase", marginBottom: 28 }}>
-            BUILT FOR<br /><span style={{ color: "#FFFFFF" }}>STRENGTH.</span><br />MADE FOR<br /><span style={{ WebkitTextStroke: "1px #FFFFFF", color: "transparent" }}>EVERYONE.</span>
-          </h1>
+          <h1 style={{ 
+  fontFamily: "'Barlow Condensed',sans-serif", 
+  fontSize: "clamp(52px,10vw,120px)", 
+  fontWeight: 900, 
+  lineHeight: 0.9, 
+  letterSpacing: "-0.02em", 
+  textTransform: "uppercase", 
+  marginBottom: 28,
+  color: "#FFFFFF" // makes BUILT FOR & MADE FOR white
+}}>
+  BUILT FOR<br />
+  <span style={{ color: "#D6FF00" }}>STRENGTH.</span><br />
+  MADE FOR<br />
+  <span style={{ WebkitTextStroke: "1px #FFFFFF", color: "transparent" }}>
+    EVERYONE.
+  </span>
+</h1>
           <p style={{ fontFamily: "'Barlow',sans-serif", fontWeight: 300, fontSize: 18, lineHeight: 1.7, color: "#999", maxWidth: 520, marginBottom: 40 }}>
             AIM FITNESS GYM is Thane West's dedicated space for real training — from beginners taking their first step to regulars chasing their next goal.
           </p>
