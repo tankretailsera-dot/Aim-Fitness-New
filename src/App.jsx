@@ -680,7 +680,7 @@ function ServiceDetailPage({ serviceId, navigate }) {
 
       {/* Related */}
       <section style={{ background: "#0d0d0d", padding: "80px 40px", borderTop: "1px solid #1a1a1a" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: "100%", margin: "0 auto", padding: "0 20px" }}>
           <div className="tag">Explore More</div>
           <h2 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 900, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 0.95, textTransform: "uppercase", marginBottom: 36 }}>
             OTHER <span style={{ color: "#e8ff00" }}>SERVICES</span>
