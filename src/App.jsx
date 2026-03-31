@@ -429,7 +429,13 @@ function HomePage({ navigate }) {
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
               {[
-                { label: "Phone", value: "8879451638", link: "tel:8879451638", sub: "Call or WhatsApp for membership info" },
+                { label: "Phone", value: "9594072062", link: "tel:9594072062", sub: "Call or WhatsApp for membership info" },
+      { 
+  label: "Email", 
+  value: "rushirane07@gmail.com", 
+  link: "mailto:rushirane07@gmail.com", 
+  sub: "Send us an email for enquiries and support" 
+},
                 { label: "Address", value: "Lokmanya Nagar, Thane West", sub: "In front of TMC School, Pada No.2, Thane – 400606" },
                 { label: "Area", value: "Thane West, Maharashtra", sub: "Serving the Lokmanya Nagar community" },
               ].map((item) => (
